@@ -1,13 +1,17 @@
-// --- HERO SLIDER ---
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-const slideInterval = 5000; // Change every 5 seconds
+/* script.js */
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    const slideInterval = 5000; 
 
-function nextSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-}
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(nextSlide, slideInterval);
+});
 
 // Start Slider
 setInterval(nextSlide, slideInterval);
@@ -49,3 +53,4 @@ window.onscroll = function() {
 
 // --- MOBILE MENU TOGGLE (Optional simple version) ---
 // For a fully responsive menu toggle, you would add a hamburger button listener here.
+
