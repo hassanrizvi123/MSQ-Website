@@ -3,203 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - MSQ ENTERPRISE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Contact Us | MSQ Enterprise</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="container header-container">
-            <div class="logo">
-                <i class="fas fa-industry"></i>
-                MSQ ENTERPRISE
-            </div>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+        <div class="container navbar">
+            <div class="logo"><h2>MSQ Enterprise</h2></div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="category.html">Categories</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
                 </ul>
             </nav>
-            <div class="header-contact">
-                <i class="fas fa-envelope"></i>
-                <span>info@msqenterprise.com</span>
-            </div>
+            <div class="nav-email">idea.msq@gmail.com</div>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <section class="section-padding">
         <div class="container">
-            <h1>Contact Us</h1>
-            <div class="breadcrumb">
-                <a href="index.html">Home</a>
-                <span>/</span>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </section>
+            <h1 class="text-center" style="margin-bottom: 50px;">Get In Touch</h1>
+            
+            <div class="contact-grid">
+                <!-- Info Column -->
+                <div>
+                    <h2 style="margin-bottom: 20px;">We’d love to hear from you!</h2>
+                    <p style="margin-bottom: 30px;">Whether you have a question, need a quote, or want to discuss a project, reach out to us.</p>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: var(--primary);">Email:</h4>
+                        <p>idea.msq@gmail.com</p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: var(--primary);">WhatsApp / Phone:</h4>
+                        <p>+92 311 6725933</p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: var(--primary);">Office Address:</h4>
+                        <p>Office #9, Plot #LS/A, Row-12, Block 4A, Gulshan-e-Iqbal, Karachi, Pakistan</p>
+                    </div>
 
-    <!-- Contact Section -->
-    <section class="section">
-        <div class="container">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <div class="contact-card fade-in hover-lift">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Our Office</h3>
-                    <p>123 Industrial Area<br>Karachi, Pakistan</p>
-                </div>
-                <div class="contact-card fade-in hover-lift">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3>Phone Number</h3>
-                    <p>+92 300 1234567<br>+92 21 1234567</p>
-                </div>
-                <div class="contact-card fade-in hover-lift">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email Address</h3>
-                    <p>info@msqenterprise.com<br>sales@msqenterprise.com</p>
-                </div>
-                <div class="contact-card fade-in hover-lift">
-                    <div class="contact-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Working Hours</h3>
-                    <p>Monday - Saturday<br>9:00 AM - 6:00 PM</p>
-                </div>
-            </div>
-
-            <!-- Contact Form & Info -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start;">
-                <!-- Contact Form -->
-                <div class="fade-in">
-                    <h2 class="section-title" style="text-align: left;">Send us a Message</h2>
-                    <div class="form-container" style="margin: 0;">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="company">Company Name</label>
-                                <input type="text" id="company" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea id="message" class="form-control" required></textarea>
-                            </div>
-                            <button type="submit" class="btn">Send Message</button>
-                        </form>
-                        <a href="https://wa.me/923001234567" class="whatsapp-btn hover-lift" target="_blank" style="width: 100%; text-align: center; justify-content: center;">
-                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                        </a>
+                    <div style="margin-top: 30px;">
+                        <h4 style="margin-bottom: 10px;">Follow Us:</h4>
+                        <a href="#" style="font-size: 1.5rem; margin-right: 15px; color: #3b5998;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="font-size: 1.5rem; margin-right: 15px; color: #c32aa3;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="font-size: 1.5rem; margin-right: 15px; color: #0077b5;"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
 
-                <!-- Additional Info -->
-                <div class="fade-in">
-                    <h2 class="section-title" style="text-align: left;">Get In Touch</h2>
-                    <div style="background: var(--light-color); padding: 40px; border-radius: 15px;">
-                        <h3 style="margin-bottom: 20px; color: var(--primary-color);">Ready to Start Your Project?</h3>
-                        <p style="margin-bottom: 25px;">We're here to help you find the perfect packaging solution for your needs. Whether you need standard products or custom solutions, our team is ready to assist you.</p>
-                        
-                        <div style="margin-bottom: 30px;">
-                            <h4 style="color: var(--primary-color); margin-bottom: 15px;">Quick Response</h4>
-                            <p>We typically respond to all inquiries within 2-4 hours during business days.</p>
-                        </div>
-
-                        <div style="margin-bottom: 30px;">
-                            <h4 style="color: var(--primary-color); margin-bottom: 15px;">Free Consultation</h4>
-                            <p>Get a free consultation and quote for your packaging requirements.</p>
-                        </div>
-
-                        <div>
-                            <h4 style="color: var(--primary-color); margin-bottom: 15px;">Visit Our Factory</h4>
-                            <p>Schedule a visit to our manufacturing facility to see our processes firsthand.</p>
-                        </div>
-                    </div>
-
-                    <!-- Emergency Contact -->
-                    <div style="background: var(--primary-color); color: white; padding: 30px; border-radius: 15px; margin-top: 30px; text-align: center;">
-                        <i class="fas fa-exclamation-circle" style="font-size: 40px; margin-bottom: 15px;"></i>
-                        <h3 style="color: white;">Urgent Requirements?</h3>
-                        <p style="margin-bottom: 20px;">For urgent orders and emergency requirements, contact our dedicated support line.</p>
-                        <a href="tel:+923001234567" class="btn" style="background: white; color: var(--primary-color);">Call Now: +92 300 1234567</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Map -->
-            <div class="map-container fade-in">
-                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
-                    <i class="fas fa-map-marked-alt" style="font-size: 60px; margin-bottom: 20px; color: var(--primary-color);"></i>
-                    <h3 style="color: var(--primary-color); margin-bottom: 15px;">Our Location</h3>
-                    <p style="text-align: center; max-width: 400px;">123 Industrial Area, Karachi, Pakistan<br>Near Port Qasim Industrial Zone</p>
-                    <a href="https://maps.google.com" target="_blank" class="btn" style="margin-top: 20px;">View on Google Maps</a>
+                <!-- Form Column -->
+                <div style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                    <form>
+                        <h3 style="margin-bottom: 20px;">Send a Message</h3>
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea rows="5" placeholder="Write your message here..." required></textarea>
+                        <button type="submit" class="submit-btn">Submit Inquiry</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Map Placeholder (Optional) -->
+    <section>
+        <div style="width: 100%; height: 400px; background: #ddd; display: flex; justify-content: center; align-items: center; color: var(--dark);">
+            <!-- Embed Google Map Iframe here later -->
+            <h2>Google Map Location Loading...</h2>
+        </div>
+    </section>
+
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <i class="fas fa-industry"></i>
-                        MSQ ENTERPRISE
-                    </div>
-                    <p>Leading plastic manufacturing company providing high-quality packaging solutions for various industries since 1998.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="categories.html">Categories</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Industrial Area, Karachi, Pakistan</p>
-                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
-                    <p><i class="fas fa-envelope"></i> info@msqenterprise.com</p>
-                </div>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h2 style="color: white;">MSQ Enterprise</h2>
+                <p style="color: #a1a2b4; margin-top: 15px;">Partners in your success.</p>
             </div>
-            <div class="copyright">
-                <p>&copy; 2023 MSQ ENTERPRISE. All Rights Reserved.</p>
+             <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>idea.msq@gmail.com</li>
+                    <li>+92 311 6725933</li>
+                </ul>
             </div>
         </div>
+        <div class="footer-bottom"><p>&copy; 2024 MSQ Enterprise.</p></div>
     </footer>
-
-    <script src="script.js"></script>
+    <a href="https://wa.me/923116725933" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 </body>
-
 </html>
