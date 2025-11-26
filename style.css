@@ -389,6 +389,23 @@ footer {
     justify-content: center;
     transition: var(--transition);
 }
+.animate-on-load {
+    animation: slipUp 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+@keyframes slipUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .whatsapp-float:hover {
     transform: scale(1.1);
@@ -411,3 +428,4 @@ footer {
     .navbar { flex-direction: column; height: auto; padding: 20px 0; }
     .nav-links { flex-direction: column; gap: 15px; text-align: center; width: 100%; margin: 15px 0;}
 }
+
