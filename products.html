@@ -3,251 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - MSQ ENTERPRISE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Products | MSQ Enterprise</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+
     <header>
-        <div class="container header-container">
-            <div class="logo">
-                <i class="fas fa-industry"></i>
-                MSQ ENTERPRISE
-            </div>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+        <div class="container navbar">
+            <div class="logo"><h2>MSQ Enterprise</h2></div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="category.html">Categories</a></li>
                     <li><a href="products.html" class="active">Products</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-            <div class="header-contact">
-                <i class="fas fa-envelope"></i>
-                <span>info@msqenterprise.com</span>
-            </div>
+            <div class="nav-email">idea.msq@gmail.com</div>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <section class="section-padding">
         <div class="container">
-            <h1>Our Products</h1>
-            <div class="breadcrumb">
-                <a href="index.html">Home</a>
-                <span>/</span>
-                <a href="products.html">Products</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title fade-in">Premium Plastic Products</h2>
+            <h1 class="text-center" style="margin-bottom: 50px;">Our Product Catalogue</h1>
             
-            <!-- Pharma Products -->
-            <div id="pharma" class="product-category">
-                <h3 class="fade-in" style="text-align: center; margin-bottom: 40px; color: var(--primary-color);">Pharmaceutical Packaging</h3>
-                <div class="products-grid">
-                    <div class="product-card fade-in hover-lift">
-                        <div class="product-img">
-                            <i class="fas fa-pills"></i>
-                        </div>
-                        <div class="product-content">
-                            <h3>Medicine Bottles</h3>
-                            <p>High-quality plastic bottles for tablets, capsules, and liquid medicines. Available in various sizes and colors.</p>
-                            <ul style="margin: 15px 0; padding-left: 20px;">
-                                <li>• Child-resistant caps</li>
-                                <li>• UV protection</li>
-                                <li>• FDA approved materials</li>
-                            </ul>
-                        </div>
+            <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+                <!-- Sidebar Category -->
+                <aside style="flex: 1; min-width: 250px;">
+                    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <h3 style="margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 10px;">Categories</h3>
+                        <ul style="line-height: 2.5;">
+                            <li><a href="#" style="color: var(--primary); font-weight: 600;">All Products</a></li>
+                            <li><a href="#">PET Bottles</a></li>
+                            <li><a href="#">Textile Accessories</a></li>
+                            <li><a href="#">Pharma Packaging</a></li>
+                        </ul>
                     </div>
+                </aside>
 
-                    <div class="product-card fade-in hover-lift">
-                        <div class="product-img">
-                            <i class="fas fa-prescription-bottle"></i>
+                <!-- Products Grid -->
+                <div style="flex: 3;">
+                    <div class="product-grid" style="margin-top: 0;">
+                        
+                        <!-- 60ml Bottle -->
+                        <div class="product-card">
+                            <div class="product-inner">
+                                <div class="product-front">
+                                    <img src="https://images.unsplash.com/photo-1624823183486-f40441a7f763?q=80&w=600&auto=format&fit=crop" alt="60ml Bottle">
+                                    <h3>Amble Bottle 60ml</h3>
+                                </div>
+                                <div class="product-back">
+                                    <h3>Amble Bottle 60ml</h3>
+                                    <ul>
+                                        <li><strong>Weight:</strong> 9 Grams</li>
+                                        <li><strong>Neck:</strong> 25 mm</li>
+                                        <li><strong>Colors:</strong> Milky, Amber</li>
+                                    </ul>
+                                    <p style="font-size: 0.8rem; margin-top: 10px;">Perfect for liquids that require secure storage.</p>
+                                    <br>
+                                    <a href="https://wa.me/923116725933?text=I'm interested in Amble Bottle 60ml" class="btn" style="border: 1px solid white; padding: 5px 15px; font-size: 0.9rem;">Order on WhatsApp</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="product-content">
-                            <h3>Prescription Containers</h3>
-                            <p>Secure containers for prescription drugs with tamper-evident features and clear labeling areas.</p>
-                            <ul style="margin: 15px 0; padding-left: 20px;">
-                                <li>• Tamper-evident seals</li>
-                                <li>• Clear/amber options</li>
-                                <li>• Custom printing available</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div class="product-card fade-in hover-lift">
-                        <div class="product-img">
-                            <i class="fas fa-syringe"></i>
+                        <!-- 120ml Bottle -->
+                        <div class="product-card">
+                            <div class="product-inner">
+                                <div class="product-front">
+                                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=600&auto=format&fit=crop" alt="120ml Bottle">
+                                    <h3>Amble Bottle 120ml</h3>
+                                </div>
+                                <div class="product-back">
+                                    <h3>Amble Bottle 120ml</h3>
+                                    <ul>
+                                        <li><strong>Weight:</strong> 12 Grams</li>
+                                        <li><strong>Neck:</strong> 25 mm</li>
+                                        <li><strong>Colors:</strong> Milky, Amber</li>
+                                    </ul>
+                                    <p style="font-size: 0.8rem; margin-top: 10px;">Larger capacity, same stylish design.</p>
+                                    <br>
+                                    <a href="https://wa.me/923116725933?text=I'm interested in Amble Bottle 120ml" class="btn" style="border: 1px solid white; padding: 5px 15px; font-size: 0.9rem;">Order on WhatsApp</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="product-content">
-                            <h3>Medical Device Packaging</h3>
-                            <p>Sterile packaging for medical devices, syringes, and surgical instruments.</p>
-                            <ul style="margin: 15px 0; padding-left: 20px;">
-                                <li>• Sterile barrier packaging</li>
-                                <li>• Tyvek and plastic combinations</li>
-                                <li>• Custom sizes available</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Textile Products -->
-            <div id="textile" class="product-category" style="margin-top: 80px;">
-                <h3 class="fade-in" style="text-align: center; margin-bottom: 40px; color: var(--primary-color);">Textile Packaging</h3>
-                <div class="products-grid">
-                    <div class="product-card fade-in hover-lift">
-                        <div class="product-img">
-                            <i class="fas fa-tshirt"></i>
+                         <!-- Shirt Clip -->
+                         <div class="product-card">
+                            <div class="product-inner">
+                                <div class="product-front">
+                                    <img src="https://images.unsplash.com/photo-1605518216965-7bc81f4b9b0e?q=80&w=600&auto=format&fit=crop" alt="Shirt Clip">
+                                    <h3>Crystal Shirt Clip</h3>
+                                </div>
+                                <div class="product-back">
+                                    <h3>Shirt Clip</h3>
+                                    <ul>
+                                        <li><strong>Material:</strong> Crystal Plastic</li>
+                                        <li><strong>Pack:</strong> 500 / 1000 pcs</li>
+                                        <li><strong>Props:</strong> High Elasticity</li>
+                                    </ul>
+                                    <p style="font-size: 0.8rem; margin-top: 10px;">Ensure your clothes stay securely fastened.</p>
+                                    <br>
+                                    <a href="https://wa.me/923116725933?text=I'm interested in Shirt Clips" class="btn" style="border: 1px solid white; padding: 5px 15px; font-size: 0.9rem;">Order on WhatsApp</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="product-content">
-                            <h3>Garment Bags</h3>
-                            <p>Clear plastic bags for clothing protection during storage and transportation.</p>
-                            <ul style="margin: 15px 0; padding-left: 20px;">
-                                <li>• Various thickness options</li>
-                                <li>• Custom printing available</li>
-                                <li>• Anti-static variants</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div class="product-card fade-in hover-lift">
-                        <div class="product-img">
-                            <i class="fas fa-shopping-bag"></i>
+                        <!-- ORS Bottle -->
+                        <div class="product-card">
+                            <div class="product-inner">
+                                <div class="product-front">
+                                    <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=600&auto=format&fit=crop" alt="ORS Bottle">
+                                    <h3>ORS Bottle 500ml</h3>
+                                </div>
+                                <div class="product-back">
+                                    <h3>ORS Bottle 500ml</h3>
+                                    <ul>
+                                        <li><strong>Weight:</strong> Custom</li>
+                                        <li><strong>Neck:</strong> Standard</li>
+                                        <li><strong>Color:</strong> Transparent</li>
+                                    </ul>
+                                    <p style="font-size: 0.8rem; margin-top: 10px;">Ideal for electrolyte solutions.</p>
+                                    <br>
+                                    <a href="https://wa.me/923116725933?text=I'm interested in ORS Bottles" class="btn" style="border: 1px solid white; padding: 5px 15px; font-size: 0.9rem;">Order on WhatsApp</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="product-content">
-                            <h3>Retail Poly Bags</h3>
-                            <p>Attractive packaging bags for retail clothing with header cards and hanging options.</p>
-                            <ul style="margin: 15px 0; padding-left: 20px;">
-                                <li>• Header card attachments</li>
-                                <li>• Die-cut handles</li>
-                                <li>• High-clarity film</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div class="product-card fade-in hover-lift">
-                        <div class="product-img">
-                            <i class="fas fa-box-open"></i>
-                        </div>
-                        <div class="product-content">
-                            <h3>Bulk Packaging</h3>
-                            <p>Heavy-duty bags for bulk textile shipments and industrial packaging needs.</p>
-                            <ul style="margin: 15px 0; padding-left: 20px;">
-                                <li>• Reinforced seams</li>
-                                <li>• Waterproof options</li>
-                                <li>• Custom sizes</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Food & Beverage Products -->
-            <div id="food" class="product-category" style="margin-top: 80px;">
-                <h3 class="fade-in" style="text-align: center; margin-bottom: 40px; color: var(--primary-color);">Food & Beverage Packaging</h3>
-                <div class="products-grid">
-                    <div class="product-card fade-in hover-lift">
-                        <div class="product-img">
-                            <i class="fas fa-wine-bottle"></i>
-                        </div>
-                        <div class="product-content">
-                            <h3>Beverage Bottles</h3>
-                            <p>PET bottles for water, juices, and other beverages with various closure options.</p>
-                            <ul style="margin: 15px 0; padding-left: 20px;">
-                                <li>• Food-grade PET material</li>
-                                <li>• Various capacity options</li>
-                                <li>• Custom shapes available</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="product-card fade-in hover-lift">
-                        <div class="product-img">
-                            <i class="fas fa-utensils"></i>
-                        </div>
-                        <div class="product-content">
-                            <h3>Food Containers</h3>
-                            <p>Microwave-safe containers for ready-to-eat meals and food storage.</p>
-                            <ul style="margin: 15px 0; padding-left: 20px;">
-                                <li>• Microwave safe</li>
-                                <li>• Leak-proof designs</li>
-                                <li>• Stackable for storage</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="product-card fade-in hover-lift">
-                        <div class="product-img">
-                            <i class="fas fa-cookie"></i>
-                        </div>
-                        <div class="product-content">
-                            <h3>Snack Packaging</h3>
-                            <p>Flexible packaging for snacks, biscuits, and confectionery products.</p>
-                            <ul style="margin: 15px 0; padding-left: 20px;">
-                                <li>• High-barrier films</li>
-                                <li>• Resealable options</li>
-                                <li>• Stand-up pouches</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Contact CTA -->
-            <div class="fade-in" style="text-align: center; margin-top: 60px; padding: 40px; background: var(--light-color); border-radius: 15px;">
-                <h3>Need Custom Solutions?</h3>
-                <p style="margin-bottom: 25px;">We specialize in creating custom packaging solutions tailored to your specific requirements.</p>
-                <a href="contact.html" class="btn">Get Custom Quote</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923116725933" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <i class="fas fa-industry"></i>
-                        MSQ ENTERPRISE
-                    </div>
-                    <p>Leading plastic manufacturing company providing high-quality packaging solutions for various industries since 1998.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="categories.html">Categories</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Industrial Area, Karachi, Pakistan</p>
-                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
-                    <p><i class="fas fa-envelope"></i> info@msqenterprise.com</p>
-                </div>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h2 style="color: white;">MSQ Enterprise</h2>
+                <p style="color: #a1a2b4; font-size: 0.9rem; margin-top: 15px;">Plastic parts manufacturer based in Karachi, Pakistan.</p>
             </div>
-            <div class="copyright">
-                <p>&copy; 2023 MSQ ENTERPRISE. All Rights Reserved.</p>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> idea.msq@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +92 311 6725933</li>
+                </ul>
             </div>
         </div>
+        <div class="footer-bottom"><p>&copy; 2024 MSQ Enterprise.</p></div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
-
 </html>
