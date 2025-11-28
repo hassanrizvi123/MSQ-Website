@@ -1,4 +1,4 @@
-/* script.js */
+/* hero section animation */
 document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slide');
     let currentSlide = 0;
@@ -13,13 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(nextSlide, slideInterval);
 });
 
-// Start Slider
-setInterval(nextSlide, slideInterval);
-
-
 // --- COUNTER ANIMATION ---
 const counters = document.querySelectorAll('.count');
-const speed = 200; // The lower the slower
+const speed = 100; // The lower the slower
 
 const animateCounters = () => {
     counters.forEach(counter => {
@@ -53,4 +49,3 @@ window.onscroll = function() {
 
 // --- MOBILE MENU TOGGLE (Optional simple version) ---
 // For a fully responsive menu toggle, you would add a hamburger button listener here.
-
